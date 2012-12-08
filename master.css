@@ -1,0 +1,270 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: rgb(85, 85, 85);
+}
+
+body{
+	background-image: url(images/background-noise.png);
+	margin: 0;
+	box-shadow: inset 0 0 500px 100px rgba(79, 79, 79, 0.1);
+}
+
+a{
+	text-decoration: none;
+}
+
+
+img, a img{
+	border-style: none;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+}
+
+nav a{
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	opacity: 0.5;
+	width: 50px;
+	height: 94px;
+	background-repeat: no-repeat;
+	-webkit-transition: left 0.15s, right 0.15s;
+	-moz-transition: left 0.15s, right 0.15s;
+	transition: left 0.15s, right 0.15s;
+}
+
+#previous:hover{
+	left: -10px;
+	padding-right: 10px;
+}
+
+#next:hover{
+	right: -10px;
+	padding-left: 10px;
+}
+
+nav #previous{
+	left: 0;
+	margin-left: 50px;
+	background-image: url(images/previous.png);
+	background-position: center left;
+}
+
+nav #next{
+	right: 0;
+	margin-right: 50px;
+	background-image: url(images/next.png);
+	background-position: center right;
+}
+
+#menu{
+	text-align: right;
+	padding-right: 100px;
+	padding-top: 50px;
+}
+
+#menu a{
+	color: rgb(85, 85, 85);
+	margin-right: 10px;
+}
+
+#menu a:hover{
+	text-decoration: underline;
+}
+
+h1{
+	font-size: 2.4em;
+	color: rgb(0, 127, 29);
+	text-align: center;
+	background-image: url(images/title-line.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom: 20px;
+}
+
+h1 a{
+	color: rgb(0, 127, 29);
+	background-image: url('images/back.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+	margin-left: -30px;
+	padding-top: 0px;
+	-webkit-transition: padding 0.15s, margin 0.15s;
+	-moz-transition: padding 0.15s, margin 0.15s;
+	transition: padding 0.15s, margin 0.15s;
+}
+
+h1 a:hover{
+	padding-left: 35px;
+	margin-left: -35px;
+}
+
+article h2{
+	text-align: center;
+	margin-bottom: 19px;
+}
+
+article .subheading{
+	text-align: center;
+	margin-top: -19px;
+	margin-bottom: 19px;
+}
+
+#projects h2{
+	text-transform: uppercase;
+	color: rgb(0, 127, 29);
+	margin-bottom: 5px;
+	padding-top: 20px;
+	font-size: 1.5em;
+	clear: both;
+}
+
+#projects h2:first-child{
+	padding-top: inherit;
+}
+
+p{
+	width: 700px;
+	margin: auto;
+	color: rgb(49, 49, 49);
+}
+
+
+article p{
+	line-height: 1.5em;
+}
+
+article a{
+	text-decoration: underline;
+}
+
+article iframe, article img{
+	margin: 10px auto 40px auto;
+	display: block;
+	border-radius: 5px;
+	border: 5px solid white;
+	box-shadow: 0 0 3px #888;
+	max-width: 660px;
+}
+
+
+#projects{
+	width: 780px;
+	padding: 0 0 0 30px;
+	margin: 20px auto auto auto;
+}
+
+.project{
+	width: 220px;
+	height: 300px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	border: 5px solid white;
+	box-shadow: 0 0 5px #888;
+	position: relative;
+}
+
+.project .date{
+	color: #878787;
+	font-size: 0.8em;
+}
+
+a.project:hover{
+	border-color: #EEEFEE;
+}
+
+
+.project p, .project h3{
+	margin: 10px 20px;
+}
+
+.project h3{
+	font-size: 1em;
+	text-align: center;
+	height: 44px;
+}
+
+.project p{
+	font-size: 0.9em;
+	width: auto;
+}
+
+.project img{
+	width: 220px;
+	height: 150px;
+	margin: 0;
+}
+
+.project.disabled{
+	opacity: 0.6;
+	cursor: default;
+	box-shadow: 0 0 2px #888;
+}
+
+
+.disabled-label{
+	background-color: gray;
+	color: white;
+	font-size: 0.8em;
+	padding: 1px 3px 1px 3px;
+	margin-right: 4px;
+	border-radius: 4px;
+	display: block;
+	float: left;
+}
+
+footer{
+	display: block;
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+footer .social{
+	margin-top: 10px;
+}
+
+footer:target{
+	-webkit-animation: emphasize 1s;
+	-moz-animation: emphasize 1s;
+	animation: emphasize 1s;
+}
+
+@-webkit-keyframes emphasize{
+	50%{
+		-webkit-transform: rotate(-7deg) scale(1.2);
+	}
+	100%{
+		-webkit-transform: rotate(0) scale(1);
+	}
+}
+
+@-moz-keyframes emphasize{
+	50%{
+		-moz-transform: rotate(-7deg) scale(1.2);
+	}
+	100%{
+		-moz-transform: rotate(0) scale(1);
+	}
+}
+
+@keyframes emphasize{
+	50%{
+		transform: rotate(-7deg) scale(1.2);
+	}
+	100%{
+		transform: rotate(0) scale(1);
+	}
+}
