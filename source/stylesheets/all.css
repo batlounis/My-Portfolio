@@ -7,7 +7,7 @@
 }
 
 body{
-	background-image: url(images/background-noise.png);
+	background-image: url(/images/background-noise.png);
 	margin: 0;
 	box-shadow: inset 0 0 500px 100px rgba(79, 79, 79, 0.1);
 }
@@ -53,14 +53,14 @@ nav a{
 nav #previous{
 	left: 0;
 	margin-left: 50px;
-	background-image: url(images/previous.png);
+	background-image: url(/images/previous.png);
 	background-position: center left;
 }
 
 nav #next{
 	right: 0;
 	margin-right: 50px;
-	background-image: url(images/next.png);
+	background-image: url(/images/next.png);
 	background-position: center right;
 }
 
@@ -83,7 +83,7 @@ h1{
 	font-size: 2.4em;
 	color: rgb(0, 127, 29);
 	text-align: center;
-	background-image: url(images/title-line.png);
+	background-image: url(/images/title-line.png);
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	padding-bottom: 20px;
@@ -91,7 +91,7 @@ h1{
 
 h1 a{
 	color: rgb(0, 127, 29);
-	background-image: url('images/back.png');
+	background-image: url(/images/back.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 30px;
