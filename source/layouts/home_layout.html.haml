@@ -1,0 +1,54 @@
+!!!
+%html
+	%head
+		%meta{'http-equiv' => 'Content-Type', :content => 'text/html', :charset => 'utf-8'}
+		%title= (data.page.title ? data.page.title+" - " : "") +  "Salim Batlouni's Work"
+		%meta{:name=>'author', :content=>'Salim Batlouni'}
+		- if current_page.path == 'index.html'
+			%meta{:property=>'og:image', :content=>'http://www.batlounis.com/images/salim.png'}
+		- else
+			%meta{:property=>'og:image', :content=>'http://www.batlounis.com/images/projects/'+current_page.data["title"].parameterize+'.jpg'}
+		= stylesheet_link_tag "normalize", "all"
+		:javascript
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36913525-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+   
+	%body{:class=>"#{page_classes}"}
+	
+		%header
+			#menu
+				%a{:href=>'#contact'} contact
+				%a{:href=>'salim_batlouni_resume.pdf', :target=>'_blank'} resume
+			%h1
+				- if current_page.url != '/'
+					= link_to "Salim Batlouni's Work", '/'
+				- else
+					Salim Batlouni's Work
+				
+		
+		=yield
+		
+		
+		%footer#contact
+			%img{:src=>'/images/salim.png', :alt=>'Salim Batlouni'}
+			%div Salim Batlouni
+			%div batlounis@gmail.com
+			%div +1 812 827 2546
+			.social
+				%a{:href=>"http://vimeo.com/batlounis", :title=>"Salim's Vimeo", :target=>"_blank"}
+					%img{:src=>"/images/social/vimeo.jpg"}
+				%a{:href=>"http://pinterest.com/batlounis/", :title=>"Salim's Pinterest", :target=>"_blank"}
+					%img{:src=>"/images/social/pinterest.png"}
+				%a{:href=>"http://www.facebook.com/batlounis", :title=>"Salim's Facebook", :target=>"_blank"}
+					%img{:src=>"/images/social/facebook.png"}
+				%a{:href=>"http://pt.linkedin.com/in/batlounis", :title=>"Salim's LinkedIn", :target=>"_blank"}
+					%img{:src=>"/images/social/linkedin.jpg"}
+				%a{:href=>"http://www.behance.net/batlounis", :title=>"Salim's Behance", :target=>"_blank"}
+					%img{:src=>"/images/social/behance.jpg"}
