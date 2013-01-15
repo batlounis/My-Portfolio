@@ -174,14 +174,14 @@ article iframe, article img {
     font-size: 1.4em;
     padding: .5em;
     border-radius: 5px;
-    border: 2px solid white;
-    box-shadow: 0 0 2px #888888;
-    background-color: white; }
-    /* line 185, all.scss */
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 2px rgba(136, 136, 136, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); }
+    /* line 186, all.scss */
     .more_projects a:hover {
-      border-color: #EEEFEE; }
+      border-color: rgba(238, 239, 238, 0.8); }
 
-/* line 191, all.scss */
+/* line 192, all.scss */
 .project {
   width: 220px;
   height: 300px;
@@ -195,43 +195,43 @@ article iframe, article img {
   position: relative;
   display: inline-block; }
 
-/* line 205, all.scss */
+/* line 206, all.scss */
 .project .date {
   color: #878787;
   font-size: 0.8em; }
 
-/* line 210, all.scss */
+/* line 211, all.scss */
 a.project:hover {
   border-color: #EEEFEE; }
 
-/* line 215, all.scss */
+/* line 216, all.scss */
 .project p, .project h4 {
   margin: 10px 20px; }
 
-/* line 219, all.scss */
+/* line 220, all.scss */
 .project h4 {
   font-size: 1em;
   text-align: center;
   height: 44px; }
 
-/* line 225, all.scss */
+/* line 226, all.scss */
 .project p {
   font-size: 0.9em;
   width: auto; }
 
-/* line 230, all.scss */
+/* line 231, all.scss */
 .project img {
   width: 220px;
   height: 150px;
   margin: 0; }
 
-/* line 236, all.scss */
+/* line 237, all.scss */
 .project.disabled {
   opacity: 0.6;
   cursor: default;
   box-shadow: 0 0 2px #888888; }
 
-/* line 243, all.scss */
+/* line 244, all.scss */
 .disabled-label {
   background-color: gray;
   color: white;
@@ -242,7 +242,7 @@ a.project:hover {
   display: block;
   float: left; }
 
-/* line 254, all.scss */
+/* line 255, all.scss */
 footer {
   display: block;
   clear: both;
@@ -250,39 +250,39 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-/* line 262, all.scss */
+/* line 263, all.scss */
 footer .social {
   margin-top: 10px; }
 
-/* line 266, all.scss */
+/* line 267, all.scss */
 footer:target {
   -webkit-animation: emphasize 1s;
   -moz-animation: emphasize 1s;
   animation: emphasize 1s; }
 
 @-webkit-keyframes emphasize {
-  /* line 273, all.scss */
+  /* line 274, all.scss */
   50% {
     -webkit-transform: rotate(-7deg) scale(1.2); }
 
-  /* line 276, all.scss */
+  /* line 277, all.scss */
   100% {
     -webkit-transform: rotate(0) scale(1); } }
 
 @-moz-keyframes emphasize {
-  /* line 282, all.scss */
+  /* line 283, all.scss */
   50% {
     -moz-transform: rotate(-7deg) scale(1.2); }
 
-  /* line 285, all.scss */
+  /* line 286, all.scss */
   100% {
     -moz-transform: rotate(0) scale(1); } }
 
 @keyframes emphasize {
-  /* line 291, all.scss */
+  /* line 292, all.scss */
   50% {
     transform: rotate(-7deg) scale(1.2); }
 
-  /* line 294, all.scss */
+  /* line 295, all.scss */
   100% {
     transform: rotate(0) scale(1); } }
