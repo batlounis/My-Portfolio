@@ -1,12 +1,15 @@
 ---
-title: Hello
+title: More Projects
 ---
 
-	
-%p I'm Salim, and I'm doing my Master's in Human-Computer Interaction at Carnegie Mellon University. Please take a look at my work below.
+%h2 More Projects
+%p
+	I appreciate your interest in seeing more! Here are more projects that could not find room in the home page.
+	= link_to 'Back', '/'
 
 #projects
-	- grouped_projects.each do |category, pages|
+	
+	- more_grouped_projects.each do |category, pages|
 		%h3= category
 		- pages.each do |page|
 			- link_to page, :class=>'project' do
@@ -17,4 +20,4 @@ title: Hello
 					%span.date= page.data["year"]
 
 .more_projects
-	= link_to 'More Projects', 'more-projects'
+	= link_to 'Back', '/'

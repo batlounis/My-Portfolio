@@ -27,7 +27,8 @@
 # with_layout :admin do
 #   page "/admin/*"
 # end
-page '/index.html', :layout=>:home_layout
+page 'index.html', :layout=>:home_layout
+page 'more-projects.html', :layout=>:home_layout
 
 
 # Proxy (fake) files
@@ -45,11 +46,19 @@ page '/index.html', :layout=>:home_layout
 # Methods defined in the helpers block are available in templates
 helpers do
   def projects
-    return sitemap.resources.delete_if{|p| !p.data["order"]}.sort_by!{|p| p.data["order"]}
+    return sitemap.resources.delete_if{|p| !p.data["order"] || p.data["order"]>100 }.sort_by!{|p| p.data["order"]}
+  end
+  
+  def more_projects
+    return sitemap.resources.delete_if{|p| !p.data["order"] || p.data["order"]<=100 }.sort_by!{|p| p.data["order"]}
   end
   
   def grouped_projects
     return projects.group_by{|p| p.data["category"]}
+  end
+  
+  def more_grouped_projects
+    return more_projects.group_by{|p| p.data["category"]}
   end
 end
 
