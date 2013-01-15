@@ -8,6 +8,8 @@
 			%meta{:property=>'og:image', :content=>'http://www.batlounis.com/images/salim.png'}
 		- else
 			%meta{:property=>'og:image', :content=>'http://www.batlounis.com/images/projects/'+current_page.data["title"].parameterize+'.jpg'}
+		- if data.page.description
+			%meta{:property=>'description', :content=>data.page.description}
 		= stylesheet_link_tag "normalize", "all"
 		- if !ENV['NOANALYTICS']
 			:javascript

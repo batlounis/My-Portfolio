@@ -175,15 +175,16 @@ article iframe, article img{
 	margin-top: 3em;
 	
 	a{
+		$opacity: .8;
 		font-size: 1.4em;
 		padding: .5em;
 		border-radius: 5px;
-		border: 2px solid white;
-		box-shadow: 0 0 2px #888;
-		background-color: white;
+		border: 2px solid rgba(white, $opacity);
+		box-shadow: 0 0 2px rgba(#888, $opacity);
+		background-color: rgba(white, $opacity);
 		
 		&:hover{
-			border-color: #EEEFEE;
+			border-color: rgba(#EEEFEE, $opacity);
 		}
 	}
 }
