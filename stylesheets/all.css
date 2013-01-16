@@ -147,9 +147,10 @@ article p {
 
 /* line 152, all.scss */
 p a {
-  text-decoration: underline; }
+  text-decoration: underline;
+  white-space: nowrap; }
 
-/* line 156, all.scss */
+/* line 157, all.scss */
 article iframe, article img {
   margin: 10px auto 40px auto;
   display: block;
@@ -158,18 +159,18 @@ article iframe, article img {
   box-shadow: 0 0 3px #888888;
   max-width: 660px; }
 
-/* line 166, all.scss */
+/* line 167, all.scss */
 #projects {
   width: 780px;
   padding: 0 0 0 30px;
   margin: 20px auto auto auto;
   border-bottom: solid 1px rgba(0, 0, 0, 0.1); }
 
-/* line 173, all.scss */
+/* line 174, all.scss */
 .more_projects {
   text-align: center;
   margin-top: 3em; }
-  /* line 177, all.scss */
+  /* line 178, all.scss */
   .more_projects a {
     font-size: 1.4em;
     padding: .5em;
@@ -177,11 +178,11 @@ article iframe, article img {
     border: 2px solid rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 2px rgba(136, 136, 136, 0.8);
     background-color: rgba(255, 255, 255, 0.8); }
-    /* line 186, all.scss */
+    /* line 187, all.scss */
     .more_projects a:hover {
       border-color: rgba(238, 239, 238, 0.8); }
 
-/* line 192, all.scss */
+/* line 193, all.scss */
 .project {
   width: 220px;
   height: 300px;
@@ -195,43 +196,43 @@ article iframe, article img {
   position: relative;
   display: inline-block; }
 
-/* line 206, all.scss */
+/* line 207, all.scss */
 .project .date {
   color: #878787;
   font-size: 0.8em; }
 
-/* line 211, all.scss */
+/* line 212, all.scss */
 a.project:hover {
   border-color: #EEEFEE; }
 
-/* line 216, all.scss */
+/* line 217, all.scss */
 .project p, .project h4 {
   margin: 10px 20px; }
 
-/* line 220, all.scss */
+/* line 221, all.scss */
 .project h4 {
   font-size: 1em;
   text-align: center;
   height: 44px; }
 
-/* line 226, all.scss */
+/* line 227, all.scss */
 .project p {
   font-size: 0.9em;
   width: auto; }
 
-/* line 231, all.scss */
+/* line 232, all.scss */
 .project img {
   width: 220px;
   height: 150px;
   margin: 0; }
 
-/* line 237, all.scss */
+/* line 238, all.scss */
 .project.disabled {
   opacity: 0.6;
   cursor: default;
   box-shadow: 0 0 2px #888888; }
 
-/* line 244, all.scss */
+/* line 245, all.scss */
 .disabled-label {
   background-color: gray;
   color: white;
@@ -242,7 +243,7 @@ a.project:hover {
   display: block;
   float: left; }
 
-/* line 255, all.scss */
+/* line 256, all.scss */
 footer {
   display: block;
   clear: both;
@@ -250,39 +251,39 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-/* line 263, all.scss */
+/* line 264, all.scss */
 footer .social {
   margin-top: 10px; }
 
-/* line 267, all.scss */
+/* line 268, all.scss */
 footer:target {
   -webkit-animation: emphasize 1s;
   -moz-animation: emphasize 1s;
   animation: emphasize 1s; }
 
 @-webkit-keyframes emphasize {
-  /* line 274, all.scss */
+  /* line 275, all.scss */
   50% {
     -webkit-transform: rotate(-7deg) scale(1.2); }
 
-  /* line 277, all.scss */
+  /* line 278, all.scss */
   100% {
     -webkit-transform: rotate(0) scale(1); } }
 
 @-moz-keyframes emphasize {
-  /* line 283, all.scss */
+  /* line 284, all.scss */
   50% {
     -moz-transform: rotate(-7deg) scale(1.2); }
 
-  /* line 286, all.scss */
+  /* line 287, all.scss */
   100% {
     -moz-transform: rotate(0) scale(1); } }
 
 @keyframes emphasize {
-  /* line 292, all.scss */
+  /* line 293, all.scss */
   50% {
     transform: rotate(-7deg) scale(1.2); }
 
-  /* line 295, all.scss */
+  /* line 296, all.scss */
   100% {
     transform: rotate(0) scale(1); } }
