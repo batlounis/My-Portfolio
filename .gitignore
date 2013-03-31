@@ -12,3 +12,13 @@
 
 # Ignore Sass' cache
 /.sass-cache
+
+.DS_Store
+
+source/.DS_Store
+
+source/images/projects/.DS_Store
+
+source/images/.DS_Store
+
+source/images/.DS_Store
