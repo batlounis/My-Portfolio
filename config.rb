@@ -69,6 +69,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :directory_indexes
+page 'pinterest-ac1a9.html', :directory_index=>false
 
 # Build-specific configuration
 configure :build do
