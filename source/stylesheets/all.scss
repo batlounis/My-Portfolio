@@ -1,5 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300");
 
+@font-face{
+  font-family: 'entypoSocial';
+  src:  url('/fonts/entypo-social.ttf'),
+        url('/fonts/entypo-social.eot');
+}
+
+
 *{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -257,6 +264,11 @@ footer{
 
 footer .social{
 	margin-top: 10px;
+  
+  a{
+    font-family: 'entypoSocial';
+    font-size: 4em;
+  }
 }
 
 footer:target{
