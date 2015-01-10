@@ -1,29 +1,33 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300");
-/* line 3, all.scss */
+@font-face {
+  font-family: 'entypoSocial';
+  src: url("/fonts/entypo-social.ttf"), url("/fonts/entypo-social.eot"); }
+
+/* line 10, all.scss */
 * {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #555555; }
 
-/* line 9, all.scss */
+/* line 16, all.scss */
 body {
   background-color: #f2f2f2;
   margin: 0; }
 
-/* line 14, all.scss */
+/* line 21, all.scss */
 a {
   text-decoration: none; }
 
-/* line 19, all.scss */
+/* line 26, all.scss */
 img, a img {
   border-style: none; }
 
-/* line 23, all.scss */
+/* line 30, all.scss */
 nav {
   position: fixed;
   width: 100%; }
 
-/* line 28, all.scss */
+/* line 35, all.scss */
 nav a {
   position: absolute;
   height: 0;
@@ -37,46 +41,46 @@ nav a {
   -moz-transition: left 0.15s, right 0.15s;
   transition: left 0.15s, right 0.15s; }
 
-/* line 42, all.scss */
+/* line 49, all.scss */
 #previous:hover {
   left: -10px;
   padding-right: 10px; }
 
-/* line 47, all.scss */
+/* line 54, all.scss */
 #next:hover {
   right: -10px;
   padding-left: 10px; }
 
-/* line 52, all.scss */
+/* line 59, all.scss */
 nav #previous {
   left: 0;
   margin-left: 50px;
   background-image: url(/images/previous.png);
   background-position: center left; }
 
-/* line 59, all.scss */
+/* line 66, all.scss */
 nav #next {
   right: 0;
   margin-right: 50px;
   background-image: url(/images/next.png);
   background-position: center right; }
 
-/* line 66, all.scss */
+/* line 73, all.scss */
 #menu {
   text-align: right;
   padding-right: 100px;
   padding-top: 50px; }
 
-/* line 72, all.scss */
+/* line 79, all.scss */
 #menu a {
   color: #555555;
   margin-right: 10px; }
 
-/* line 77, all.scss */
+/* line 84, all.scss */
 #menu a:hover {
   text-decoration: underline; }
 
-/* line 81, all.scss */
+/* line 88, all.scss */
 h1 {
   font-size: 2.4em;
   color: #007f1d;
@@ -86,7 +90,7 @@ h1 {
   background-position: bottom center;
   padding-bottom: 20px; }
 
-/* line 91, all.scss */
+/* line 98, all.scss */
 h1 a {
   color: #007f1d;
   background-image: url(/images/back.png);
@@ -99,29 +103,29 @@ h1 a {
   -moz-transition: padding 0.15s, margin 0.15s;
   transition: padding 0.15s, margin 0.15s; }
 
-/* line 104, all.scss */
+/* line 111, all.scss */
 h1 a:hover {
   padding-left: 35px;
   margin-left: -35px; }
 
-/* line 109, all.scss */
+/* line 116, all.scss */
 article .subheading {
   text-align: center;
   margin-top: -19px;
   margin-bottom: 19px; }
 
-/* line 115, all.scss */
+/* line 122, all.scss */
 article h2 {
   text-align: center;
   margin-bottom: 19px; }
 
-/* line 120, all.scss */
+/* line 127, all.scss */
 .more-projects h2 {
   text-align: center;
   width: 780px;
   margin: auto auto 0.2em auto; }
 
-/* line 127, all.scss */
+/* line 134, all.scss */
 #projects h3 {
   text-transform: uppercase;
   color: #007f1d;
@@ -130,26 +134,26 @@ article h2 {
   font-size: 1.5em;
   clear: both; }
 
-/* line 136, all.scss */
+/* line 143, all.scss */
 #projects h3:first-child {
   padding-top: inherit; }
 
-/* line 140, all.scss */
+/* line 147, all.scss */
 p {
   width: 700px;
   margin: auto;
   color: #313131; }
 
-/* line 147, all.scss */
+/* line 154, all.scss */
 article p {
   line-height: 1.5em; }
 
-/* line 151, all.scss */
+/* line 158, all.scss */
 p a {
   text-decoration: underline;
   white-space: nowrap; }
 
-/* line 156, all.scss */
+/* line 163, all.scss */
 article iframe, article img {
   margin: 10px auto 40px auto;
   display: block;
@@ -158,21 +162,21 @@ article iframe, article img {
   box-shadow: 0 0 3px #888888;
   max-width: 660px; }
 
-/* line 166, all.scss */
+/* line 173, all.scss */
 #projects {
   width: 780px;
   padding: 0 0 0 30px;
   margin: 20px auto auto auto; }
 
-/* line 172, all.scss */
+/* line 179, all.scss */
 .more_projects {
   text-align: center;
   margin-top: 3em; }
-  /* line 176, all.scss */
+  /* line 183, all.scss */
   .more_projects a {
     font-size: 1.4em; }
 
-/* line 182, all.scss */
+/* line 189, all.scss */
 .project {
   width: 220px;
   height: 300px;
@@ -185,46 +189,46 @@ article iframe, article img {
   box-shadow: 0 0 0.5em #e6e6e6;
   position: relative;
   display: inline-block; }
-  /* line 195, all.scss */
+  /* line 202, all.scss */
   .project:hover {
     box-shadow: 0 0 0.5em #cccccc; }
-  /* line 199, all.scss */
+  /* line 206, all.scss */
   .project img {
     border-radius: 0.5em 0.5em 0 0; }
 
-/* line 204, all.scss */
+/* line 211, all.scss */
 .project .date {
   color: #878787;
   font-size: 0.8em; }
 
-/* line 211, all.scss */
+/* line 218, all.scss */
 .project p, .project h4 {
   margin: 10px 20px; }
 
-/* line 215, all.scss */
+/* line 222, all.scss */
 .project h4 {
   font-size: 1em;
   text-align: center;
   height: 44px; }
 
-/* line 221, all.scss */
+/* line 228, all.scss */
 .project p {
   font-size: 0.9em;
   width: auto; }
 
-/* line 226, all.scss */
+/* line 233, all.scss */
 .project img {
   width: 220px;
   height: 150px;
   margin: 0; }
 
-/* line 232, all.scss */
+/* line 239, all.scss */
 .project.disabled {
   opacity: 0.6;
   cursor: default;
   box-shadow: 0 0 2px #888888; }
 
-/* line 239, all.scss */
+/* line 246, all.scss */
 .disabled-label {
   background-color: gray;
   color: white;
@@ -235,7 +239,7 @@ article iframe, article img {
   display: block;
   float: left; }
 
-/* line 250, all.scss */
+/* line 257, all.scss */
 footer {
   display: block;
   clear: both;
@@ -243,39 +247,43 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-/* line 258, all.scss */
+/* line 265, all.scss */
 footer .social {
   margin-top: 10px; }
+  /* line 268, all.scss */
+  footer .social a {
+    font-family: 'entypoSocial';
+    font-size: 4em; }
 
-/* line 262, all.scss */
+/* line 274, all.scss */
 footer:target {
   -webkit-animation: emphasize 1s;
   -moz-animation: emphasize 1s;
   animation: emphasize 1s; }
 
 @-webkit-keyframes emphasize {
-  /* line 269, all.scss */
+  /* line 281, all.scss */
   50% {
     -webkit-transform: rotate(-7deg) scale(1.2); }
 
-  /* line 272, all.scss */
+  /* line 284, all.scss */
   100% {
     -webkit-transform: rotate(0) scale(1); } }
 
 @-moz-keyframes emphasize {
-  /* line 278, all.scss */
+  /* line 290, all.scss */
   50% {
     -moz-transform: rotate(-7deg) scale(1.2); }
 
-  /* line 281, all.scss */
+  /* line 293, all.scss */
   100% {
     -moz-transform: rotate(0) scale(1); } }
 
 @keyframes emphasize {
-  /* line 287, all.scss */
+  /* line 299, all.scss */
   50% {
     transform: rotate(-7deg) scale(1.2); }
 
-  /* line 290, all.scss */
+  /* line 302, all.scss */
   100% {
     transform: rotate(0) scale(1); } }
